@@ -1,0 +1,14 @@
+aws_region    = "us-east-1"
+project_name  = "module-example"
+vpc_cidr      = "10.11.0.0/16"
+public_cidrs  = ["10.11.1.0/24", "10.11.2.0/24"]
+private_cidrs = ["10.11.3.0/24", "10.11.4.0/24"]
+accessip      = "0.0.0.0/0"
+#Excluding the ssh feature for now
+#key_name = "KEY PAIR NAME"
+#public_key_path = "PATH TO KEY FILE"
+instance_type    = "t2.micro"
+instance_count   = "2"
+policy_name      = "Access_CW"
+role_name        = "AccessCloudWatch"
+instance_profile = ""
