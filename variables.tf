@@ -7,7 +7,7 @@ variable "project_name" {
 }
 
 variable "vpc_cidr" {
-
+default = ""
 }
 
 variable "public_cidrs" {
