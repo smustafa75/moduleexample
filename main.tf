@@ -4,8 +4,9 @@ provider "aws" {
 
 module "network" {
   source       = "./network"
-#  vpc_cidr     = var.vpc_cidr
-#  public_cidrs = var.public_cidrs
-#  accessip     = var.accessip
+  vpc_cidr     = var.vpc_cidr
+  public_cidrs = var.public_cidrs
+  private_cidrs = var.private_cidrs
+  accessip     = var.accessip
 }
 

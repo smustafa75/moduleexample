@@ -7,10 +7,16 @@ variable "project_name" {
 }
 
 variable "vpc_cidr" {
-default = ""
+
 }
 
 variable "public_cidrs" {
+
+  type    = list(string)
+  default = []
+}
+
+variable "private_cidrs" {
 
   type    = list(string)
   default = []
