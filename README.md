@@ -10,6 +10,7 @@ This repo shall provide below infrastructure once provisioned:
     - 01 IAM Policy
 - 02 EC2 instances
 
-Upon completion, the script automatically install HTTP into EC2 insatnces and start the service.
-Once completed, you will see EC2 metrics in CloudWatch within 10 minutes.
+Once completed, the script will automatically install HTTP into EC2 insatnces and start the service.
+You will see EC2 metrics in CloudWatch within 10 minutes.
+The **tfvars** files is added as text, use it as desired.
 
