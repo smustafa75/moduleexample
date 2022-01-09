@@ -1,12 +1,16 @@
 output "Bucket Name" {
-  value = module.storage.bucketname
+   description = "S3 bucket Name"
+   value = module.storage.bucketname
 }
 
 output "VPC Name" {
+    description = "VPC Name"
+
   value = module.networking.vpcname
 }
 
 output "Public Subnets" {
+    description = "Public Subnets"
   value = module.networking.subnets
 }
 
@@ -14,11 +18,12 @@ output "Formatted public subnets" {
   value = join(", ", module.networking.subnets)
 }
 
-output "Subnet IDs" {
+output "Subnet_IDs" {
   value = module.networking.subnet_id
 }
 
 output "security_group" {
+    description = "Security Groups"
   value = module.networking.public_security_group
 }
 
