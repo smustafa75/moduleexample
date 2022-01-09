@@ -1,14 +1,21 @@
-#output "VPC_Name" {
-#  description = "VPC Name"
+output "VPC_Name" {
+  description = "VPC Name"
+  value = module.network.vpcname
+}
 
-#  value = module.networking.vpcname
-#}
+output "Public_Subnets" {
+  description = "Public Subnets"
+  value       = module.network.subnets
+}
 
-#output "Public_Subnets" {
-#  description = "Public Subnets"
-#  value       = module.networking.subnets
-#}
+output "Private_Subnets" {
+  description = "Private Subnets"
+  value       = module.network.subnets
+}
 
+output "Bucket_Name" {
+  value = module.storage.bucketname
+}
 #output "Formatted_public_subnets" {
 #  value = join(", ", module.networking.subnets)
 #}
