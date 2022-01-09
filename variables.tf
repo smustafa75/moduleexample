@@ -36,3 +36,11 @@ variable "instance_type" {
 variable "instance_count" {
   default = 1
 }
+
+variable "policy_name" {
+
+}
+
+variable "role_name" {
+
+}

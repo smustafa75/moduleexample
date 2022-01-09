@@ -1,6 +1,6 @@
 output "VPC_Name" {
   description = "VPC Name"
-  value = module.network.vpcname
+  value       = module.network.vpcname
 }
 
 output "Public_Subnets" {
@@ -16,11 +16,14 @@ output "Private_Subnets" {
 output "Bucket_Name" {
   value = module.storage.bucketname
 }
-#output "Formatted_public_subnets" {
-#  value = join(", ", module.networking.subnets)
-#}
 
-#output "Subnet_IDs" {
-#  value = module.networking.subnet_id
-#}
+output "servers" {
+  value = module.compute.server_id
+}
 
+output "public_ip" {
+  value = module.compute.server_ip
+}
+output "role_name" {
+  value = module.iam.iam_role
+}
