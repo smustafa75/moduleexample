@@ -17,7 +17,3 @@ variable "security_group" {
 variable "instance_profile" {
   
 }
-
-#variable "private_subnests" {
-  
-#}
