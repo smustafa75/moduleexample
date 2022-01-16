@@ -4,11 +4,11 @@
         {
             "Action": "sts:AssumeRole",
             "Principal" : {
-                "Service" : ["ec2.amazonaws.com", "s3.amazonaws.com"]
+                "Service" : "ec2.amazonaws.com"
                 
             },
             "Effect": "Allow",
-            "Sid": "AllowEC2toServices"
+            "Sid": "AllowEC2toS3"
             
         },
         {

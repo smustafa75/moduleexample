@@ -38,13 +38,17 @@ variable "instance_count" {
 }
 
 variable "policy_name" {
-
+  default = ""
 }
 
 variable "role_name" {
-
+  default = ""
 }
 
-variable "instance_profile"{
- default = "" 
+variable "s3_policy" {
+  default = ""
+}
+
+variable "instance_profile" {
+  default = ""
 }

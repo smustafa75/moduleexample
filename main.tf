@@ -24,13 +24,14 @@ module "compute" {
   subnets          = module.network.subnet_id
   security_group   = module.network.public_security_group
   instance_profile = module.iam.iam_instance_profile_arn
-depends_on = [
- module.iam.iam_instance_profile_arn 
-]
+  depends_on = [
+    module.iam.iam_instance_profile_arn
+  ]
 }
 
 module "iam" {
   source      = "./iam"
   policy_name = var.policy_name
+  s3_policy   = var.s3_policy
   role_name   = var.role_name
 }
