@@ -35,6 +35,6 @@ resource "aws_instance" "tf_server" {
   iam_instance_profile = var.instance_profile
 
   tags = {
-    Name = " EC2 - tf_server-${count.index + 1 }"
+    Name = " EC2 - TF_Server-${count.index + 1 }"
   }
 }

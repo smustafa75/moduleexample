@@ -10,7 +10,7 @@ output "Public_Subnets" {
 
 output "Private_Subnets" {
   description = "Private Subnets"
-  value       = module.network.subnets
+  value       = module.network.private_subnets
 }
 
 output "Bucket_Name" {
