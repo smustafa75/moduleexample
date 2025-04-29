@@ -14,16 +14,21 @@ output "Private_Subnets" {
 }
 
 output "Bucket_Name" {
-  value = module.storage.bucketname
+  description = "S3 Bucket Name"
+  value       = module.storage.bucketname
 }
 
 output "servers" {
-  value = module.compute.server_id
+  description = "EC2 Instance IDs"
+  value       = module.compute.server_id
 }
 
 output "public_ip" {
-  value = module.compute.server_ip
+  description = "EC2 Instance Public IPs"
+  value       = module.compute.server_ip
 }
+
 output "role_name" {
-  value = module.iam.iam_role
+  description = "IAM Role Name"
+  value       = module.iam.iam_role
 }
